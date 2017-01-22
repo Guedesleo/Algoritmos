@@ -21,11 +21,13 @@ inicio
       Para i de 1 ate 20 passo 1 faca
          b[21-i]<-a[i]
       fimpara
+             escreval("Matriz de A: ")
             Para i de 1 ate 20 passo 1 faca
-                 escreval("Matriz de a ",a[i])
+                 escreval(a[i])
             fimpara
+             escreval("O primeiro numero da Matriz B e o ultimo da matriz A sucessivamente:")
              Para i de 1 ate 20 passo 1 faca
-                 escreval("O primeiro numero da Matriz B e o ultimo da matriz A sucessivamente ",b[i])
+                 escreval(b[i])
             fimpara
 // Seção de Comandos 
 fimalgoritmo

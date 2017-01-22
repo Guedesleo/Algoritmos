@@ -23,12 +23,13 @@ Para i de 1 ate 15 passo 1 faca
     fimpara
   b[i]<-f
 fimpara
-
+   escreval("Os valores da Matriz A:")
 Para i de 1 ate 15 faca
-              escreval("Os valores da Matriz A:",a[i])
+escreval(a[i])
   fimpara
+   escreval("Os valores da Matriz B:")
   Para i de 1 ate 15 faca
-              escreval("Os valores da Matriz B:",b[i])
+              escreval(b[i])
   fimpara
 // Seção de Comandos
 

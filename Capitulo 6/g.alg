@@ -26,8 +26,9 @@ inicio
            c[i]<-b[i-20]
            fimse
       fimpara
+                escreval("Junção dos elementos A e B pra o Matriz C:")
             Para i de 1 ate 50 passo 1 faca
-                 escreval("Junção dos elementos A e B pra o Matriz C:",c[i])
+                 escreval(c[i])
             fimpara
 // Seção de Comandos 
 fimalgoritmo

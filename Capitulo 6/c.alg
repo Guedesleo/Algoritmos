@@ -14,19 +14,20 @@ a:vetor [1..20] de inteiro
 b:vetor [1..20] de inteiro
 c:vetor [1..20] de inteiro
 inicio
+                escreva("Digite 8 numero:")
              Para i de 1 ate 8 faca
-                escreva("Digite um numero:")
                 leia(a[i])
              fimpara
+             escreva("Digite 8 numero:")
              Para i de 1 ate 8 faca
-                 escreva("Digite um numero:")
                  leia(b[i])
             fimpara
             Para i de 1 ate 8 faca
                 c[i]<- a[i]-b[i]
             fimpara
+               escreval("A subtração de A - B:")
             Para i de 1 ate 8 faca
-              escreval("A subtração de A - B",c[i])
+            escreval(c[i])
             fimpara
 // Seção de Comandos 
 fimalgoritmo

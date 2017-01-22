@@ -8,12 +8,13 @@ var
 i: inteiro
 a: vetor[0..9] de inteiro
 inicio
+         escreva("Digite 10 numeros inteiros:")
       Para i de 0 ate 9 faca
-           escreva("Digite 10 numeros inteiros:")
            leia(a[i])
       fimpara
+      escreval("Esse sao os valores digitado:")
       Para i de 0 ate 9 faca
-         escreval("Esse sao os valores digitado:",a[i])
+      escreval(a[i])
       fimpara
 // Seção de Comandos 
 fimalgoritmo

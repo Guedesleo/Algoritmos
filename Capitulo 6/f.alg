@@ -26,8 +26,9 @@ inicio
                 c[i]<- a[i]
                 c[15+i]<-b[i]
             fimpara
+                     escreval("Junção da matriz A e B pra obter a matriz C:")
              Para i de 1 ate 30 faca
-                 escreval("Junção da matriz A e B pra obter a matriz C:",c[i])
+                 escreval(c[i])
             fimpara
 // Seção de Comandos 
 fimalgoritmo

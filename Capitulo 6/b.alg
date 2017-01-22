@@ -11,13 +11,14 @@ i: inteiro
 a:vetor [1..8] de inteiro
 b:vetor [1..8] de inteiro
 inicio
+     escreva("Digite um numero:")
 Para i de 1 ate 8 faca
-           escreva("Digite um numero:")
            leia(a[i])
            b[i]<-a[i]*3
       fimpara
+       escreval("Essa e a matriz b:")
       Para i de 1 ate 8 faca
-           escreval("Essa e a matriz b:",b[i])
+      escreval(b[i])
       fimpara
 // Seção de Comandos 
 fimalgoritmo
