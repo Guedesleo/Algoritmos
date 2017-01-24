@@ -13,13 +13,13 @@ media,soma: real
 inicio
   Escreval("Digite 20 temperaturas em graus celsius:")
   media<-0
-para i de 1 ate 10 passo 1 faca
+  para i de 1 ate 10 passo 1 faca
      leia(a[i])
      soma<-soma +a[i]
      menor<-a[i]
      maior<-a[i]
-fimpara
-para i de 1 ate 10 passo 1 faca
+  fimpara
+  para i de 1 ate 10 passo 1 faca
          se(a[i]<menor)entao
             menor<-a[i]
          senao
@@ -28,9 +28,10 @@ para i de 1 ate 10 passo 1 faca
               fimse
          fimse
            media<-soma/i
-fimpara
-escreval("O valor da media da temperatura:",media)
-escreval("Essa e maior temperatura digitada:",maior)
-escreval("Essa e a menor temperatura digitada:",menor)
+  fimpara
+  
+  escreval("O valor da media da temperatura:",media)
+  escreval("Essa e maior temperatura digitada:",maior)
+  escreval("Essa e a menor temperatura digitada:",menor)
 // Seção de Comandos 
 fimalgoritmo

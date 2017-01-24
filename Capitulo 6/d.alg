@@ -12,18 +12,20 @@ i:inteiro
 a:vetor [1..15] de inteiro
 b:vetor [1..15] de real
 inicio
-          escreva("Digite 15 numeros inteiro:")
-Para i de 1 ate 15 faca
+          escreva("Digite 15 numeros inteiros:")
+          Para i de 1 ate 15 faca
                 leia(a[i])
                 b[i]<-a[i]^2
-  fimpara
-   escreval("Esse são todos os valores da Matriz A:" )
-Para i de 1 ate 15 faca
-     escreval(a[i])
-  fimpara
-     escreval("Esse são todos os valores da Matriz A so que elevado ao quadrado:")
-  Para i de 1 ate 15 faca
+          fimpara
+          
+          escreval("Esse são todos os valores da Matriz A:" )
+          Para i de 1 ate 15 faca
+               escreval(a[i])
+          fimpara
+          
+          escreval("Esse são todos os valores da Matriz A so que elevado ao quadrado:")
+          Para i de 1 ate 15 faca
               escreval(b[i])
-  fimpara
+          fimpara
 // Seção de Comandos 
 fimalgoritmo

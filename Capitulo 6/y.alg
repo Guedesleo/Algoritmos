@@ -10,14 +10,16 @@ a:vetor [1..15] de inteiro
 inicio
 soma<-0
          escreva("Digite 15 numero inteiro:")
-para i de 1 ate 15 passo 1 faca
-     leia(a[i])
-fimpara
-para i de 1 ate 15 passo 1 faca
-     se(a[i] mod 2 = 0)entao
-             soma<-soma+a[i]
-     fimse
-fimpara
- escreval("O soma total do numeros pares digitado:",soma)
+         para i de 1 ate 15 passo 1 faca
+               leia(a[i])
+         fimpara
+         
+         para i de 1 ate 15 passo 1 faca
+                se(a[i] mod 2 = 0)entao
+                        soma<-soma+a[i]
+                fimse
+         fimpara
+         
+         escreval("O soma total do numeros pares digitado:",soma)
 // Seção de Comandos 
 fimalgoritmo

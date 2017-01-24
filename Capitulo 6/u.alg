@@ -15,7 +15,7 @@ b:vetor [1..12]de inteiro
 c:vetor [1..24] de inteiro
 inicio
   escreval("Digite 12 nummero divisiveis por 2 e 3:")
-para i de 1 ate 12 passo 1 faca
+  para i de 1 ate 12 passo 1 faca
      leia(j)
      se((j mod 2 = 0)ou(j mod 2 = 1)) entao
            a[i]<-j
@@ -23,23 +23,26 @@ para i de 1 ate 12 passo 1 faca
      senao
           escreval("Numero Invalido!!!")
      fimse
-fimpara
-     escreval("Digite 12 numero que nao e  multiplo de 5:")
-para i de 1 ate 12 passo 1 faca
-     leia(j)
+  fimpara
+  
+  escreval("Digite 12 numero que nao e  multiplo de 5:")
+  para i de 1 ate 12 passo 1 faca
+            leia(j)
              se(j mod 5 <> 0 )entao
                b[i]<-j
                c[i+12]<-b[i]
-               senao
+             senao
                     escreval("Numero invalido!!!")
                     escreval("Digite um numero que nao e  multiplo de 5:")
                     leia(j)
                     b[i]<-j
                     c[i+12]<-b[i]
               fimse
-fimpara
-para i de 1 ate 24 passo 1 faca
-     escreval("Juncao da Matriz A e Matriz B ", C[i])
-fimpara
+  fimpara
+  
+  escreval("Juncao da Matriz A e Matriz B:")
+  para i de 1 ate 24 passo 1 faca
+      escreval(c[i])
+  fimpara
 // Seção de Comandos 
 fimalgoritmo

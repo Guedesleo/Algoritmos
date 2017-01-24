@@ -12,18 +12,20 @@ porcentagem: real
 inicio
 soma<-0
 quantidade<-0
- escreval("Digite 10 numero inteiros:")
-para i de 1 ate 10 passo 1 faca
-     leia(a[i])
-fimpara
-para i de 1 ate 10 passo 1 faca
-     se(a[i] mod 2 = 1)entao
-             soma<-soma+a[i]
-             quantidade<- quantidade+1
-     fimse
-     porcentagem<-((quantidade*100)/10)
-fimpara
- escreval("O soma total do numeros pares digitado:",soma)
- escreval("A porcetagem da quantidade de numeros imapres na matriz:",porcentagem)
+              escreval("Digite 10 numero inteiros:")
+              para i de 1 ate 10 passo 1 faca
+                   leia(a[i])
+              fimpara
+              
+              para i de 1 ate 10 passo 1 faca
+                   se(a[i] mod 2 = 1)entao
+                           soma<-soma+a[i]
+                           quantidade<- quantidade+1
+                   fimse
+                           porcentagem<-((quantidade*100)/10)
+              fimpara
+              
+              escreval("O soma total do numeros pares digitado:",soma)
+              escreval("A porcetagem da quantidade de numeros imapres na matriz:",porcentagem)
 // Seção de Comandos 
 fimalgoritmo

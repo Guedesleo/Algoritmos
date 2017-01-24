@@ -13,25 +13,29 @@ b:vetor [1..6] de inteiro
 i:inteiro
 inicio
     escreval("Digite 6 numero inteiro da Matriz A:")
- para i de 1 ate 6 passo 1 faca
-     leia(a[i])
-fimpara
- para i de 1 ate 6 passo 1 faca
-      se(i mod 2 = 0 )entao
-         b[i]<-a[i-1]
-       senao
-         b[i]<-a[i+1]
-      fimse
-fimpara
-  para i de 1 ate 6 passo 1 faca
-       escreval("Essa e a Matriz A",a[i])
-  fimpara
-  para i de 1 ate 6 passo 1 faca
+    para i de 1 ate 6 passo 1 faca
+         leia(a[i])
+    fimpara
+    
+    para i de 1 ate 6 passo 1 faca
+         se(i mod 2 = 0 )entao
+              b[i]<-a[i-1]
+         senao
+              b[i]<-a[i+1]
+         fimse
+    fimpara
+    
+       escreval("Essa e a Matriz A")
+    para i de 1 ate 6 passo 1 faca
+       escreval(a[i])
+    fimpara
+  
+    para i de 1 ate 6 passo 1 faca
             se(i mod 2 = 0 )entao
-       escreval(i,"Se o indice e par, ele vai atribuir o indice impar da matriz A:",b[i])
-             senao
-             escreval(i,"Se o indice e impar, ele vai atribuir o indice par da matriz A:",b[i])
-       fimse
-  fimpara
+                  escreval(i,"Se o indice e par, ele vai atribuir o indice impar da matriz A:",b[i])
+            senao
+                  escreval(i,"Se o indice e impar, ele vai atribuir o indice par da matriz A:",b[i])
+            fimse
+    fimpara
 // Seção de Comandos
 fimalgoritmo

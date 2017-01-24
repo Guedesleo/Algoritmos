@@ -12,18 +12,21 @@ a:vetor [1..12]de inteiro
 b:vetor [1..12]de inteiro
 inicio
       escreval("Digite 12 numeros inteiros :")
-para i de 1 ate 12 passo 1 faca
-     leia(a[i])
-fimpara
-para i de 1 ate 12 passo 1 faca
-     se(a[i] mod 2 = 1)entao
-         b[i]<-a[i]*2
-     senao
-          b[i]<-a[i]
-     fimse
-fimpara
-para i de 1 ate 12 passo 1 faca
-     escreval("Essa e a matriz B:")
-fimpara
+      para i de 1 ate 12 passo 1 faca
+           leia(a[i])
+      fimpara
+      
+      para i de 1 ate 12 passo 1 faca
+           se(a[i] mod 2 = 1)entao
+                   b[i]<-a[i]*2
+           senao
+                   b[i]<-a[i]
+           fimse
+      fimpara
+      
+      escreval("Essa e a matriz B:")
+      para i de 1 ate 12 passo 1 faca
+           escreval(b[i])
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

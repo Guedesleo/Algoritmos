@@ -12,17 +12,19 @@ b:vetor [1..20] de real
 i:inteiro
 inicio
      escreva("Digite a temperatura da sua cidade nos ultimos 20 dias:")
-para i de 1 ate 20 passo 1 faca
-     leia (a[i])
-fimpara
-para i de 1 ate 20 passo 1 faca
-     b[i]<-(9*a[i]+160)/5
-fimpara
-para i de 1 ate 20 passo 1 faca
-     escreval("Matriz A as temperatura em celsius:",a[i])
-fimpara
-para i de 1 ate 20 passo 1 faca
-     escreval("Matriz B as temperatura em fahrenheit:",b[i])
-fimpara
+     para i de 1 ate 20 passo 1 faca
+          leia (a[i])
+           b[i]<-(9*a[i]+160)/5
+     fimpara
+
+     escreval("Matriz A as temperatura em celsius:")
+     para i de 1 ate 20 passo 1 faca
+       escreval(a[i])
+     fimpara
+     
+     escreval("Matriz B as temperatura em fahrenheit:")
+     para i de 1 ate 20 passo 1 faca
+         escreval(b[i])
+     fimpara
 // Seção de Comandos
 fimalgoritmo

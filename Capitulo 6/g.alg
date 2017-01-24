@@ -11,24 +11,27 @@ a: vetor [1..20]de inteiro
 b: vetor [1..30]de inteiro
 c: vetor [1..50]de inteiro
 inicio
-       escreval("Digite 20 numero inteiro para Matriz A:")
+      escreval("Digite 20 numero inteiro para Matriz A:")
       Para i de 1 ate 20 passo 1 faca
              leia(a[i])
       fimpara
-       escreval("Digite 30 numero inteiro para Matriz B:")
+      
+      escreval("Digite 30 numero inteiro para Matriz B:")
       Para i de 1 ate 30 passo 1 faca
              leia(b[i])
       fimpara
+      
       Para i de 1 ate 50 passo 1 faca
            se (i<=20)entao
-           c[i]<- a[i]
+              c[i]<- a[i]
            senao
-           c[i]<-b[i-20]
+              c[i]<-b[i-20]
            fimse
       fimpara
-                escreval("Junção dos elementos A e B pra o Matriz C:")
-            Para i de 1 ate 50 passo 1 faca
+      
+      escreval("Junção dos elementos A e B pra o Matriz C:")
+      Para i de 1 ate 50 passo 1 faca
                  escreval(c[i])
-            fimpara
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

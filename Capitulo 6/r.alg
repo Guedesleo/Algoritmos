@@ -17,27 +17,33 @@ c:vetor [1..6] de inteiro
 d:vetor [1..6] de inteiro
 inicio
     escreval("Digite 6 numero para Matriz A:")
-para i de 1 ate 6 passo 1 faca
-     leia(a[i])
-fimpara
+    para i de 1 ate 6 passo 1 faca
+          leia(a[i])
+    fimpara
+    
     escreval("Digite 6 numero para Matriz B:")
-para i de 1 ate 6 passo 1 faca
-     leia(b[i])
-fimpara
-para i de 1 ate 6 passo 1 faca
-     se(  i mod 2 = 0 )entao
-        d[i-1]<-a[i]
-        d[i]<-b[i]
-     senao
-        c[i]<-a[i]
-        c[i+1]<-b[i]
-      fimse
-fimpara
- para i de 1 ate 6 passo 1 faca
-      escreval("Esse sao so indices pares Matriz d:",d[i])
- fimpara
-  para i de 1 ate 6 passo 1 faca
-      escreval("Esse sao so indices impares Matriz c:",c[i])
- fimpara
+    para i de 1 ate 6 passo 1 faca
+         leia(b[i])
+    fimpara
+
+    para i de 1 ate 6 passo 1 faca
+           se(  i mod 2 = 0 )entao
+                d[i-1]<-a[i]
+                d[i]<-b[i]
+           senao
+                c[i]<-a[i]
+                c[i+1]<-b[i]
+           fimse
+    fimpara
+    
+    escreval("Esse sao so indices pares Matriz d:")
+    para i de 1 ate 6 passo 1 faca
+      escreval(d[i])
+    fimpara
+    
+    escreval("Esse sao so indices impares Matriz c:",
+    para i de 1 ate 6 passo 1 faca
+      escreval(c[i])
+    fimpara
 // Seção de Comandos 
 fimalgoritmo

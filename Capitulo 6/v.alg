@@ -12,15 +12,16 @@ inicio
 soma<-0
 soma1<-0
      escreval("Digite 30 numero inteiro :")
-para i de 1 ate 30 passo 1 faca
-       leia(a[i])
-       se(a[i] mod 2 = 0)entao
-            soma <- soma+a[i]
-       senao
-            soma1<-soma1+a[i]
-       fimse
-fimpara
-       escreval("Soma do valores pares:",soma)
-       escreval("Soma do valores impares:",soma1)
+     para i de 1 ate 30 passo 1 faca
+           leia(a[i])
+           se(a[i] mod 2 = 0)entao
+                   soma <- soma+a[i]
+           senao
+                   soma1<-soma1+a[i]
+           fimse
+     fimpara
+     
+     escreval("Soma do valores pares:",soma)
+     escreval("Soma do valores impares:",soma1)
 // Seção de Comandos 
 fimalgoritmo

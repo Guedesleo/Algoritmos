@@ -11,26 +11,28 @@ i,f,j:inteiro
 a:vetor [1..15] de inteiro
 b:vetor [1..15] de real
 inicio
- escreval("Digite 15 numeros inteiros:")
-Para i de 1 ate 15 faca
+      escreval("Digite 15 numeros inteiros:")
+      Para i de 1 ate 15 faca
                 leia(a[i])
-  fimpara
-
-Para i de 1 ate 15 passo 1 faca
- f<-1
-     Para j de 1 ate a[i] passo 1 faca
-          f<-f*j
-    fimpara
-  b[i]<-f
-fimpara
-   escreval("Os valores da Matriz A:")
-Para i de 1 ate 15 faca
-escreval(a[i])
-  fimpara
-   escreval("Os valores da Matriz B:")
-  Para i de 1 ate 15 faca
+      fimpara
+      
+      Para i de 1 ate 15 passo 1 faca
+           f<-1
+      Para j de 1 ate a[i] passo 1 faca
+           f<-f*j
+      fimpara
+           b[i]<-f
+      fimpara
+      
+      escreval("Os valores da Matriz A:")
+      Para i de 1 ate 15 faca
+           escreval(a[i])
+      fimpara
+      
+      escreval("Os valores da Matriz B:")
+      Para i de 1 ate 15 faca
               escreval(b[i])
-  fimpara
+      fimpara
 // Seção de Comandos
 
 // Seção de Comandos 

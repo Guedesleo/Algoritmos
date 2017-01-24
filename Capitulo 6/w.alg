@@ -12,19 +12,20 @@ a:vetor [1..10] de inteiro
 b:vetor [1..10] de inteiro
 c:vetor [1..10] de real
 inicio
-  escreval("Digite 10 numero inteiro na Matriz A:")
-para i de 1 ate 10 passo 1 faca
-       leia(a[i])
-fimpara
- escreval("Digite 10 numero inteiro na Matriz B:")
-para i de 1 ate 10 passo 1 faca
-       leia(b[i])
-fimpara
-para i de 1 ate 10 passo 1 faca
-   c[i]<-(a[i]+b[i])^2
-fimpara
-para i de 1 ate 10 passo 1 faca
-     escreval("Junção do quadrado da  soma da Matriz A e B ",c[i])
-fimpara
+      escreval("Digite 10 numero inteiro na Matriz A:")
+      para i de 1 ate 10 passo 1 faca
+           leia(a[i])
+      fimpara
+      
+      escreval("Digite 10 numero inteiro na Matriz B:")
+      para i de 1 ate 10 passo 1 faca
+             leia(b[i])
+              c[i]<-(a[i]+b[i])^2
+      fimpara
+      
+      escreval("Junção do quadrado da  soma da Matriz A e B ",
+      para i de 1 ate 10 passo 1 faca
+           escreval(c[i])
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

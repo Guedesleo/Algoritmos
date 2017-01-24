@@ -11,19 +11,22 @@ i:inteiro
 a:vetor [1..15]de inteiro
 b:vetor [1..15]de real
 inicio
-para i de 1 ate 15 passo 1 faca
-     escreva("Digite um numero :")
-     leia(a[i])
-fimpara
-para i de 1 ate 15 passo 1 faca
-     se(i mod 2 = 0)entao
-         b[i]<-a[i] / 2
-     senao
-          b[i]<-a[i]*1.5
-     fimse
-fimpara
-para i de 1 ate 15  passo 1 faca
-     escreval("Essa e a matriz B:",b[i])
-fimpara
+      para i de 1 ate 15 passo 1 faca
+           escreva("Digite um numero :")
+           leia(a[i])
+      fimpara
+      
+      para i de 1 ate 15 passo 1 faca
+             se(i mod 2 = 0)entao
+                  b[i]<-a[i] / 2
+             senao
+                  b[i]<-a[i]*1.5
+             fimse
+      fimpara
+      
+      escreval("Essa e a matriz B:")
+      para i de 1 ate 15  passo 1 faca
+           escreval(b[i])
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

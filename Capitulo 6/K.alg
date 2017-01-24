@@ -12,23 +12,26 @@ i: inteiro
 a: vetor [1..10]de inteiro
 b:vetor [1..10] de real
 inicio
-  escreval("Digite 10 numero inteiro positivo:")
-Para i de 1 ate 10 passo 1 faca
-     leia(a[i])
-          se(a[i]<0)entao
-            escreva("Digite so numeros inteiro positivo:")
-            leia(a[i])
-          fimse
-fimpara
-Para i de 1 ate 10 passo 1 faca
-     se(a[i]>0)entao
-            b[i]<-a[i]*(-1)
-     senao
-          b[i]<-a[i]
-     fimse
-fimpara
-Para i de 1 ate 10 passo 1 faca
-  escreval("Essa e matriz B com os mesmo numero da Matriz A so que negativos:",b[i])
-fimpara
+      escreval("Digite 10 numero inteiro positivo:")
+      Para i de 1 ate 10 passo 1 faca
+             leia(a[i])
+             se(a[i]<0)entao
+                escreva("Digite so numeros inteiro positivo:")
+                leia(a[i])
+             fimse
+      fimpara
+      
+      Para i de 1 ate 10 passo 1 faca
+             se(a[i]>0)entao
+                 b[i]<-a[i]*(-1)
+             senao
+                 b[i]<-a[i]
+             fimse
+      fimpara
+
+       escreval("Essa e matriz B com os mesmo numero da Matriz A so que negativos:")
+       Para i de 1 ate 10 passo 1 faca
+             escreval(b[i])
+       fimpara
 // Seção de Comandos 
 fimalgoritmo
