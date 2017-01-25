@@ -32,9 +32,10 @@ inicio
                      b[j]<- x
                 fimse
            fimpara
-     escreval("Matriz B em ordem crescente em fatorial:")
-     escreval(b[i])
      fimpara
-
+     escreval("Matriz B em ordem crescente em fatorial:")
+     para i de 1 ate 15 passo 1 faca
+           escreval(b[i])
+     fimpara
 // Seção de Comandos 
 fimalgoritmo
