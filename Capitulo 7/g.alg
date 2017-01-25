@@ -14,13 +14,12 @@ resp:caracter
 acha:logico
 inicio
      escreval("Digite 20 numeros inteiros:")
-para i de 1 ate 20 passo 1 faca
-     leia(a[i])
-fimpara
-para i de 1 ate 20 passo 1 faca
-     b[i]<-a[i]+2
-fimpara
-  para i de 1 ate 20 passo 1 faca
+     para i de 1 ate 20 passo 1 faca
+            leia(a[i])
+            b[i]<-a[i]+2
+     fimpara
+     
+     para i de 1 ate 20 passo 1 faca
            para j de i+1 ate 20 passo 1 faca
                 se(b[i]>b[j]) entao
                        x<-b[i]
@@ -28,9 +27,10 @@ fimpara
                        b[j]<-x
                 fimse
            fimpara
-                escreval("Esse são os numeros a ser digitados na presquisa:",b[i])
-      fimpara
-resp<-"S"
+     escreval("Esse são os numeros a ser digitados na presquisa:")
+     escreval(b[i])
+     fimpara
+     resp<-"S"
      enquanto (resp="S")faca
               Escreva("Qual o numeo digitado quer que seja pesquisado:")
               leia(pesq)
@@ -52,12 +52,12 @@ resp<-"S"
               fimenquanto
                 se(acha = verdadeiro)entao
                   escreval("Numero escolhido pra pesquisa foi:",pesq,"Que esta localizado na posicao :",meio)
-                  senao
+                senao
                        escreval("Numero digitado nao foi localizado:",pesq)
                        acha<-falso
-          fimse
-          escreval("Deseja conitnua S/N")
-          leia(resp)
- fimenquanto
+                fimse
+      escreval("Deseja conitnua S/N")
+      leia(resp)
+      fimenquanto
 // Seção de Comandos
 fimalgoritmo

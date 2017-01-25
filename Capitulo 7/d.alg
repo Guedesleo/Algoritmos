@@ -15,11 +15,12 @@ c:vetor [1..12]de real
 i,j:inteiro
 x:real
 inicio
- escreval("Digite 12 numeros inteiros da Matriz A:")
-para i de 1 ate 12 passo 1 faca
-     leia(a[i])
-fimpara
-       para i de 1 ate 12 passo 1 faca
+      escreval("Digite 12 numeros inteiros da Matriz A:")
+      para i de 1 ate 12 passo 1 faca
+           leia(a[i])
+      fimpara
+      
+      para i de 1 ate 12 passo 1 faca
             para j de i+1 ate 12 passo 1 faca
                  se(a[i]>a[j])entao
                     x<-a[i]
@@ -28,10 +29,12 @@ fimpara
                  fimse
             fimpara
        fimpara
-        escreval("Digite 12 numeros inteiros da Matriz B:")
-para i de 1 ate 12 passo 1 faca
-     leia(b[i])
-fimpara
+       
+       escreval("Digite 12 numeros inteiros da Matriz B:")
+       para i de 1 ate 12 passo 1 faca
+            leia(b[i])
+       fimpara
+       
        para i de 1 ate 12 passo 1 faca
             para j de i+1 ate 12 passo 1 faca
                  se(b[i]>b[j])entao
@@ -41,9 +44,11 @@ fimpara
                  fimse
             fimpara
        fimpara
-para i de 1 ate 12 passo 1 faca
-       c[i]<-a[i]+b[i]
-fimpara
+       
+       para i de 1 ate 12 passo 1 faca
+            c[i]<-a[i]+b[i]
+       fimpara
+       
        para i de 1 ate 12 passo 1 faca
             para j de i+1 ate 12 passo 1 faca
                  se(c[i]<c[j])entao
@@ -53,8 +58,10 @@ fimpara
                  fimse
             fimpara
        fimpara
- para i de 1 ate 12 passo 1 faca
-      escreval("Os valores em ordem decresnte com a soma das duas amtrizes A e B:",c[i])
-fimpara
+       
+       escreval("Os valores em ordem decresnte com a soma das duas amtrizes A e B:")
+       para i de 1 ate 12 passo 1 faca
+            escreval(c[i])
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

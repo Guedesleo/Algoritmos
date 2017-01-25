@@ -15,27 +15,31 @@ i,j:inteiro
 x:real
 inicio
      escreval("Digite 15 numeros inteiros da matriz A:")
-para i de 1 ate 15 passo 1 faca
-     leia(a[i])
-fimpara
-     escreval("Digite 15 numeros inteiros da matriz B:")
-para i de 1 ate 15 passo 1 faca
-     leia(b[i])
-fimpara
-  escreval("Digite 15 numeros inteiros da matriz C:")
-para i de 1 ate 15 passo 1 faca
-     leia(c[i])
-     d[i]<-((a[i]+b[i]+c[i])^3)
-fimpara
-para i de 1 ate 15 passo 1 faca
-     para j de i+1 ate 15 passo 1 faca
-          se(d[i]> d[j])entao
-             x<-d[i]
-             d[i]<-d[j]
-             d[j]<-x
-          fimse
+     para i de 1 ate 15 passo 1 faca
+          leia(a[i])
      fimpara
-      escreval("Matriz D soma do quadrado das tres matriz em crescente:",d[i])
-fimpara
+     
+     escreval("Digite 15 numeros inteiros da matriz B:")
+     para i de 1 ate 15 passo 1 faca
+          leia(b[i])
+     fimpara
+     
+     escreval("Digite 15 numeros inteiros da matriz C:")
+     para i de 1 ate 15 passo 1 faca
+          leia(c[i])
+          d[i]<-((a[i]+b[i]+c[i])^3)
+     fimpara
+     
+     para i de 1 ate 15 passo 1 faca
+          para j de i+1 ate 15 passo 1 faca
+               se(d[i]> d[j])entao
+                   x<-d[i]
+                   d[i]<-d[j]
+                   d[j]<-x
+               fimse
+          fimpara
+      escreval("Matriz D soma do quadrado das tres matriz em crescente:")
+      escreval(d[i])
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

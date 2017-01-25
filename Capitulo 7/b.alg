@@ -13,23 +13,25 @@ b: vetor [1..8]de inteiro
 resp:caracter
 acha:logico
 inicio
-     escreval("Digite 8 numeros inteiros :")
-Para i de 1 ate 8 passo 1 faca
-     leia(a[i])
-     b[i]<-a[i]*5
-fimpara
-para i de 1 ate 8 passo 1 faca
-     para j de i+1 ate 8 passo 1 faca
-          se(b[i]>b[j]) entao
-             x<-b[i]
-             b[i]<-b[j]
-             b[j]<-x
-          fimse
-     fimpara
+      escreval("Digite 8 numeros inteiros :")
+      Para i de 1 ate 8 passo 1 faca
+           leia(a[i])
+           b[i]<-a[i]*5
+      fimpara
+      
+      para i de 1 ate 8 passo 1 faca
+           para j de i+1 ate 8 passo 1 faca
+                se(b[i]>b[j]) entao
+                    x<-b[i]
+                    b[i]<-b[j]
+                    b[j]<-x
+                fimse
+           fimpara
+           
      escreval("Esse sao os numeros que deve procurar na pesq:",b[i])
-fimpara
-       resp<-"S"
- enquanto (resp = "S")faca
+     fimpara
+     resp<-"S"
+     enquanto (resp = "S")faca
           escreva("Qual o numero que voce que pesquisar:")
           leia(pesq)
           comeco<-1
@@ -39,23 +41,23 @@ fimpara
                    meio <-((comeco+final)div 2)
                    se (pesq = b[meio]) entao
                      acha<- verdadeiro
-                     senao
+                   senao
                         se(pesq < b[meio])entao
                            final<-meio-1
-                           senao
+                        senao
                              comeco<-meio+1
                         fimse
                    fimse
           fimenquanto
           se(acha = verdadeiro)entao
                   escreval(pesq,"Foi localizado na posicao",meio)
-                  senao
+          senao
                        escreval("Nao foi localizada:",pesq)
                        acha<-falso
           fimse
           escreval("Deseja conitnua S/N")
           leia(resp)
- fimenquanto
+     fimenquanto
  
 // Seção de Comandos 
 fimalgoritmo

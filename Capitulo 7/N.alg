@@ -4,7 +4,7 @@ algoritmo "semnome"
 // Data : 06/01/2017
 // Seção de Declarações 
 // Elaborar um programa Que leia três matrizes A. B e C de uma dimensão do tipo vetor com 15 elementos inteiros cada.
-// Construir uma matriz O de mesmo tipo e dimensão Que seja formada pela soma dos elementos correspondentes às matrizes A. B e C.
+// Construir uma matriz D de mesmo tipo e dimensão Que seja formada pela soma dos elementos correspondentes às matrizes A. B e C.
 // Montar o trecho de pesquisa binária para pesquisar os elementos existentes na matriz D.
 var
 a: vetor [1..12] de inteiro
@@ -16,21 +16,24 @@ acha:logico
 resp:caracter
 inicio
      escreval("Digite 12 numeros inteiros da matriz A:")
-para i de 1 ate 12 passo 1 faca
-     leia(a[i])
-fimpara
-   escreval("Digite 12 numeros inteiros da matriz B:")
-para i de 1 ate 12 passo 1 faca
-     leia(b[i])
-fimpara
-   escreval("Digite 12 numeros inteiros da matriz C:"
-para i de 1 ate 12 passo 1 faca)
-     leia(c[i])
-     d[i]<-(a[i]+b[i]+c[i])
-fimpara
-escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
-       leia(resp)
-       enquanto ((resp ="S") ou (resp="s"))  faca
+     para i de 1 ate 12 passo 1 faca
+          leia(a[i])
+     fimpara
+     
+     escreval("Digite 12 numeros inteiros da matriz B:")
+     para i de 1 ate 12 passo 1 faca
+          leia(b[i])
+     fimpara
+     
+     escreval("Digite 12 numeros inteiros da matriz C:"
+     para i de 1 ate 12 passo 1 faca)
+          leia(c[i])
+          d[i]<-(a[i]+b[i]+c[i])
+     fimpara
+     
+     escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
+     leia(resp)
+     enquanto ((resp ="S") ou (resp="s"))  faca
           escreva("Digite o numero que voce tem disponivel:")
           leia(pesq)
           comeco<-1
@@ -50,12 +53,12 @@ escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
           fimenquanto
           se(acha = verdadeiro)entao
                   escreval("Numero escolhido pra pesquisa foi:",pesq,"Que esta localizado na posicao :",meio)
-            senao
+          senao
                escreval("Numero digitado nao foi localizado:",pesq)
                        acha<-falso
           fimse
-          escreval("Deseja conitnua S/N")
-          leia(resp)
- fimenquanto
+     escreval("Deseja conitnua S/N")
+     leia(resp)
+     fimenquanto
 // Seção de Comandos 
 fimalgoritmo

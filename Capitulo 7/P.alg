@@ -13,24 +13,25 @@ a: vetor [1..10]de caracter
 b: vetor [1..10]de caracter
 x: caracter
 inicio
- escreval("Digite 10 palavras:")
+      escreval("Digite 10 palavras:")
       Para i de 1 ate 10 passo 1 faca
              leia(a[i])
              b[i]<-a[i]
       fimpara
 
-            Para i de 1 ate 10 passo 1 faca
-                 para j de i+1 ate 10 passo 1 faca
-                     se(b[i]<b[j])entao
-                        x<-b[i]
-                        b[i]<-b[j]
-                        b[j]<-x
-                     fimse
-                 fimpara
-            fimpara
-            escreval("Matriz B e descrente da matriz A , e uma oradena ascendente ")
-             Para i de 1 ate 10 passo 1 faca
+      Para i de 1 ate 10 passo 1 faca
+           para j de i+1 ate 10 passo 1 faca
+                se(b[i]<b[j])entao
+                      x<-b[i]
+                      b[i]<-b[j]
+                      b[j]<-x
+                fimse
+           fimpara
+      fimpara
+            
+      escreval("Matriz B e descrente da matriz A , e uma oradena ascendente:")
+      Para i de 1 ate 10 passo 1 faca
                  escreva(b[i]:4)
-            fimpara
+      fimpara
 // Seção de Comandos 
 fimalgoritmo

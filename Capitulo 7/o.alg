@@ -10,13 +10,14 @@ i,comeco,meio,final,pesq:inteiro
 acha:logico
 resp:caracter
 inicio
-escreva("Digite 12 numeros inteiros da matriz A:")
-para i de 1 ate 15 passo 1 faca
-     leia(a[i])
-fimpara
-escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
-       leia(resp)
-       enquanto ((resp ="S") ou (resp="s"))  faca
+      escreva("Digite 12 numeros inteiros da matriz A:")
+      para i de 1 ate 15 passo 1 faca
+           leia(a[i])
+      fimpara
+      
+      escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
+      leia(resp)
+      enquanto ((resp ="S") ou (resp="s"))  faca
           escreva("Digite o numero que voce tem disponivel:")
           leia(pesq)
           comeco<-1
@@ -29,7 +30,7 @@ escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
                 senao
                    se(pesq < a[meio])entao
                            final<-meio-1
-                     senao
+                   senao
                           comeco <- meio+1
                    fimse
                 fimse
@@ -42,6 +43,6 @@ escreva("Se voce deseja pesquisar alguma numero que voce tem aperte S?")
           fimse
           escreval("Deseja conitnua S/N")
           leia(resp)
- fimenquanto
+      fimenquanto
 // Seção de Comandos 
 fimalgoritmo

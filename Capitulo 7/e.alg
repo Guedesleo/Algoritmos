@@ -14,16 +14,17 @@ i,j:inteiro
 x:caracter
 inicio
    escreval("Digite 20 Caracter para Matriz A:")
-para i de 1 ate 20 passo 1 faca
-     leia(a[i])
-     c[i]<-a[i]
-fimpara
+   para i de 1 ate 20 passo 1 faca
+        leia(a[i])
+        c[i]<-a[i]
+   fimpara
+   
    escreval("Digite 20 Caracter para Matriz B:")
-para i de 1 ate 30 passo 1 faca
-     leia(b[i])
-      c[i+20]<-b[i]
-fimpara
-      para i de 1 ate 50 passo 1 faca
+   para i de 1 ate 30 passo 1 faca
+        leia(b[i])
+        c[i+20]<-b[i]
+   fimpara
+   para i de 1 ate 50 passo 1 faca
            para j de i+1 ate 50 passo 1 faca
                 se(c[i]<c[j]) entao
                        x<-c[i]
@@ -31,9 +32,11 @@ fimpara
                        c[j]<-x
                 fimse
            fimpara
-      fimpara
- para i de 1 ate 50 passo 1 faca
-     escreval("Ordem decrecente da junção da matriz A e B :",c[i])
-fimpara
+   fimpara
+   
+   escreval("Ordem decrecente da junção da matriz A e B :")
+   para i de 1 ate 50 passo 1 faca
+     escreval(c[i])
+   fimpara
 // Seção de Comandos 
 fimalgoritmo

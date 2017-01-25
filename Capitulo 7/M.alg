@@ -16,16 +16,18 @@ acha:logico
 resp:Caracter
 inicio
      escreval("Digite 12 numeros inteiros da matriz A:")
-para i de 1 ate 12 passo 1 faca
-     leia(a[i])
-fimpara
+     para i de 1 ate 12 passo 1 faca
+          leia(a[i])
+     fimpara
+     
     escreval("Digite 12 numeros inteiros da matriz B:")
-para i de 1 ate 12 passo 1 faca
-     leia(b[i])
-     c[i]<-(a[i]*b[i])
-fimpara
-resp<-"S"
-   enquanto (resp = "S")faca
+    para i de 1 ate 12 passo 1 faca
+         leia(b[i])
+         c[i]<-(a[i]*b[i])
+    fimpara
+    
+    resp<-"S"
+    enquanto (resp = "S")faca
        escreva("Digite o numero que voce quer pesquisar:")
        leia(pesq)
        i<-1
@@ -37,13 +39,13 @@ resp<-"S"
              i<-i+1
            fimse
        fimenquanto
-      se(acha = verdadeiro)entao
-escreval("Numero da pesquisa foi esse",pesq,"Essa e a localizacao do numero",i)
+       se(acha = verdadeiro)entao
+               escreval("Numero da pesquisa foi esse",pesq,"Essa e a localizacao do numero",i)
       senao
               escreval("Numero nao foi localizado:",pesq)
       fimse
-         escreval("Deseja conitnua S/N")
-          leia(resp)
+    escreval("Deseja conitnua S/N")
+    leia(resp)
    fimenquanto
 // Seção de Comandos 
 fimalgoritmo

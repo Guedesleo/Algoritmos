@@ -14,15 +14,17 @@ i,j:inteiro
 x:real
 inicio
  escreval("Digite 10 numeros inteiros da matriz A:")
-para i de 1 ate 5 passo 1 faca
+ para i de 1 ate 5 passo 1 faca
      leia(a[i])
-fimpara
-    escreval("Digite 10 numeros inteiros da matriz B:")
-para i de 1 ate 5 passo 1 faca
+ fimpara
+ 
+ escreval("Digite 10 numeros inteiros da matriz B:")
+ para i de 1 ate 5 passo 1 faca
      leia(b[i])
      c[i]<-((a[i]+b[i])^2)
-fimpara
-para i de 1 ate 5 passo 1 faca
+ fimpara
+ 
+ para i de 1 ate 5 passo 1 faca
      para j de i+1 ate 5 passo 1 faca
           se(c[i]< c[j])entao
              x<-c[i]
@@ -30,7 +32,8 @@ para i de 1 ate 5 passo 1 faca
              c[j]<-x
           fimse
      fimpara
-      escreval("Matriz C soma do quadrado dos duas matriz em decrescente:",c[i])
-fimpara
+  escreval("Matriz C soma do quadrado dos duas matriz em decrescente:")
+ escreval(c[i])
+ fimpara
 // Seção de Comandos 
 fimalgoritmo

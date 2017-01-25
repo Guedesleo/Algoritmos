@@ -11,10 +11,11 @@ acha:logico
 resp:caracter
 inicio
      escreva("Digite 10 numeros inteiros da matriz A:")
-para i de 1 ate 10 passo 1 faca
-     leia(a[i])
-fimpara
-escreva("Se voce deseja fazer uma pesquisar aperte S?")
+     para i de 1 ate 10 passo 1 faca
+          leia(a[i])
+     fimpara
+     
+     escreva("Se voce deseja fazer uma pesquisar aperte S?")
        leia(resp)
        enquanto ((resp ="S") ou (resp="s"))  faca
           escreva("Digite o numero que voce tem disponivel:")
@@ -36,6 +37,6 @@ escreva("Se voce deseja fazer uma pesquisar aperte S?")
           fimse
           escreval("Deseja conitnua S/N")
           leia(resp)
- fimenquanto
+       fimenquanto
 // Seção de Comandos 
 fimalgoritmo

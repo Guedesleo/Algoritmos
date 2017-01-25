@@ -15,15 +15,18 @@ resp:caracter
 acha:logico
 inicio
    escreval("Digite 30 numeros inteiros para Matriz A:")
-para i de 1 ate 30 passo 1 faca
-     leia(a[i])
-fimpara
-para i de 1 ate 30 passo 1 faca
-     b[i]<-a[i]^3
-     escreval("Esse são os numeros a ser digitados na presquisa:",b[i])
-fimpara
-     resp<-"S"
-     enquanto (resp="S")faca
+   para i de 1 ate 30 passo 1 faca
+        leia(a[i])
+   fimpara
+   
+   para i de 1 ate 30 passo 1 faca
+        b[i]<-a[i]^3
+        escreval("Esse são os numeros a ser digitados na presquisa:")
+        escreval(b[i])
+   fimpara
+   
+   resp<-"S"
+   enquanto (resp="S")faca
               Escreva("Qual o numeo digitado quer que seja pesquisado:")
               leia(pesq)
               i<-1
@@ -37,12 +40,12 @@ fimpara
               fimenquanto
                 se(acha = verdadeiro)entao
                   escreval("Numero escolhido pra pesquisa foi:",pesq,"Que esta localizado na posicao :",i)
-                  senao
+                senao
                        escreval("Numero digitado nao foi localizado:",pesq)
                        acha<-falso
-          fimse
-          escreval("Deseja conitnua S/N")
-          leia(resp)
+                fimse
+   escreval("Deseja conitnua S/N")
+   leia(resp)
  fimenquanto
     
 // Seção de Comandos 
