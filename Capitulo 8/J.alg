@@ -11,35 +11,38 @@ a: vetor[1..6,1..5]de inteiro
 b: vetor[1..6,1..5]de inteiro
 i,j:inteiro
 inicio
-escreval("Digite 30 numeros inteiros para Matriz A:")
-para i de 1 ate 6 passo 1 faca
-     para j de 1 ate 5 passo 1 faca
+      escreval("Digite 30 numeros inteiros para Matriz A:")
+      para i de 1 ate 6 passo 1 faca
+           para j de 1 ate 5 passo 1 faca
              leia(a[i,j])
-     fimpara
-fimpara
+           fimpara
+      fimpara
+      
        para i de 1 ate 6 passo 1 faca
-         para j de 1 ate 5 passo 1 faca
-              se(a[i,j] mod 2 = 0) entao
+             para j de 1 ate 5 passo 1 faca
+                  se(a[i,j] mod 2 = 0) entao
                        b[i,j]<-a[i,j]+5
-             senao
-                  b[i,j]<-a[i,j]-4
-             fimse
-          fimpara
+                  senao
+                       b[i,j]<-a[i,j]-4
+                  fimse
+             fimpara
         fimpara
+        
        escreval("Matriz A :")
-            para i de 1 ate 6 passo 1 faca
+       para i de 1 ate 6 passo 1 faca
                  para j de 1 ate 5 passo 1 faca
                        escreva(a[i,j]:7)
                  fimpara
-                  escreval
-         fimpara
+       escreval
+       fimpara
+       
        escreval("Cada elemento par da Matriz A é somado 5 :")
        escreval("Cada elemento impar da Matriz A e subtraido 4:")
-para i de 1 ate 6 passo 1 faca
-     para j de 1 ate 5 passo 1 faca
-            escreva(b[i,j]:7)
-   fimpara
-   escreval
-fimpara
+       para i de 1 ate 6 passo 1 faca
+             para j de 1 ate 5 passo 1 faca
+                  escreva(b[i,j]:7)
+             fimpara
+       escreval
+       fimpara
 // Seção de Comandos 
 fimalgoritmo

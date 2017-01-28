@@ -12,25 +12,27 @@ b: vetor[1..5,1..3]de inteiro
 c: vetor[1..5,1..3]de inteiro
 i,j:inteiro
 inicio
-escreval("Digite 15 numeros inteiros para Matriz A:")
-para i de 1 ate 5 passo 1 faca
-     para j de 1 ate 3 passo 1 faca
+      escreval("Digite 15 numeros inteiros para Matriz A:")
+      para i de 1 ate 5 passo 1 faca
+           para j de 1 ate 3 passo 1 faca
              leia(a[i,j])
-     fimpara
-fimpara
-escreval("Digite 15 numeros inteiros para Matriz B:")
-para i de 1 ate 5 passo 1 faca
-     para j de 1 ate 3 passo 1 faca
-             leia(b[i,j])
-             c[i,j]<-a[i,j]+b[i,j]
-     fimpara
-fimpara
- escreval("A soma da Matriz A+B o resultado:")
-para i de 1 ate 5 passo 1 faca
-     para j de 1 ate 3 passo 1 faca
+           fimpara
+      fimpara
+      
+      escreval("Digite 15 numeros inteiros para Matriz B:")
+      para i de 1 ate 5 passo 1 faca
+            para j de 1 ate 3 passo 1 faca
+                  leia(b[i,j])
+                  c[i,j]<-a[i,j]+b[i,j]
+            fimpara
+      fimpara
+      
+      escreval("A soma da Matriz A+B o resultado:")
+      para i de 1 ate 5 passo 1 faca
+           para j de 1 ate 3 passo 1 faca
              escreva(c[i,j]:7)
-     fimpara
+           fimpara
      escreval
-fimpara
+     fimpara
 // Seção de Comandos 
 fimalgoritmo

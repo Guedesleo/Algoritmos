@@ -16,25 +16,29 @@ d: vetor[1..4]de inteiro
 h: vetor[1..4,1..4]de inteiro
 i,j,g,f:inteiro
 inicio
-escreval("Digite 4 numeros inteiros para Matriz A:")
-para i de 1 ate 4 passo 1 faca
+      escreval("Digite 4 numeros inteiros para Matriz A:")
+      para i de 1 ate 4 passo 1 faca
              leia(a[i])
-     fimpara
-escreval("Digite 4 numeros inteiros para Matriz B:")
-para i de 1 ate 4 passo 1 faca
+      fimpara
+      
+      escreval("Digite 4 numeros inteiros para Matriz B:")
+      para i de 1 ate 4 passo 1 faca
              leia(b[i])
-     fimpara
-escreval("Digite 4 numeros inteiros para Matriz C:")
-para i de 1 ate 4 passo 1 faca
+      fimpara
+      
+      escreval("Digite 4 numeros inteiros para Matriz C:")
+      para i de 1 ate 4 passo 1 faca
              leia(c[i])
-     fimpara
-escreval("Digite 4 numeros inteiros para Matriz D:")
-para i de 1 ate 4 passo 1 faca
+      fimpara
+      
+      escreval("Digite 4 numeros inteiros para Matriz D:")
+      para i de 1 ate 4 passo 1 faca
              leia(d[i])
-     fimpara
-     para i de 1 ate 4 passo 1 faca
-     f<-1
-          para j de 1 ate 4 passo 1 faca
+      fimpara
+      
+      para i de 1 ate 4 passo 1 faca
+           f<-1
+           para j de 1 ate 4 passo 1 faca
                se(j=1)entao
                   h[i,j]<-a[i]*2
                senao
@@ -60,7 +64,7 @@ para i de 1 ate 4 passo 1 faca
      escreval("Essa e matriz H:")
       para i de 1 ate 4 passo 1 faca
           para j de 1 ate 4 passo 1 faca
-               escreva(h[i,j]:4)
+               escreva(h[i,j]:8)
           fimpara
       escreval
      fimpara

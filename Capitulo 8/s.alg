@@ -4,7 +4,7 @@ algoritmo "semnome"
 // Data : 11/01/2017
 // Seção de Declarações 
 //  Elaborar um programa que leia duas matrizes A e a, cada uma de duas dimensões com cinco linhas e seis colunas.
-// A matriz A de'le aceitar a entrada de 'Ialores pares, enquanto a matriz a de'le aceitar a entrada de valores impares,
+// A matriz A deve aceitar a entrada de valores pares, enquanto a matriz a de'le aceitar a entrada de valores impares,
 // As entradas dos valores nas matrizes A e B devem ser validadas pelo programa e não pelo usuário,
 // Construir a matriz C de mesma dimensão, que seja formada pela soma dos elementos da matriz A com os elementos da matriz B.
 // Apresentar os elementos da matriz C.
@@ -26,7 +26,8 @@ inicio
                 fimse
            fimpara
       fimpara
-        escreval("Digite 30 valores Impares:")
+      
+      escreval("Digite 30 valores Impares:")
       para i de 1 ate 5 passo 1 faca
            para j de 1 ate 6 passo 1 faca
                 leia(b[i,j])
@@ -39,6 +40,7 @@ inicio
                  c[i,j]<-a[i,j]+b[i,j]
            fimpara
       fimpara
+      
       escreval("E a soma do Matriz A + Matriz B")
       para i de 1 ate 5 passo 1 faca
            para j de 1 ate 6 passo 1 faca

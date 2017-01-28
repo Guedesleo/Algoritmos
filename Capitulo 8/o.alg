@@ -8,26 +8,29 @@ algoritmo "semnome"
 var
 a: vetor[1..8,1..6]de inteiro
 i,j,soma:inteiro
-b: vetor[1..5]de inteiro
+b: vetor[1..8]de inteiro
 inicio
-escreval("Digite 48 numeros inteiros para Matriz A:")
-para i de 1 ate 8 passo 1 faca
- soma<-0
-     para j de 1 ate 6 passo 1 faca
-             leia(a[i,j])
-               soma<-soma+a[i,j]
-                 b[i]<-soma
-     fimpara
-fimpara
-escreval("Matriz A :")
-para i de 1 ate 8 passo 1 faca
-     para j de 1 ate 6 passo 1 faca
-            escreva(a[i,j]:4)
-     fimpara
+      escreval("Digite 48 numeros inteiros para Matriz A:")
+      para i de 1 ate 8 passo 1 faca
+      soma<-0
+             para j de 1 ate 6 passo 1 faca
+                  leia(a[i,j])
+                  soma<-soma+a[i,j]
+                  b[i]<-soma
+             fimpara
+      fimpara
+      
+      escreval("Matriz A :")
+      para i de 1 ate 8 passo 1 faca
+           para j de 1 ate 6 passo 1 faca
+                escreva(a[i,j]:4)
+           fimpara
      escreval
-fimpara
-       para i de 1 ate 8 passo 1 faca
-            escreval("E o somatório de cada Linha da Matriz A:",b[i])
-       fimpara
+     fimpara
+     
+     escreval("E o somatório de cada Linha da Matriz A:")
+     para i de 1 ate 8 passo 1 faca
+            escreval(b[i])
+     fimpara
 // Seção de Comandos 
 fimalgoritmo

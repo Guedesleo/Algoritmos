@@ -9,18 +9,19 @@ var
 a: vetor[1..4,1..5]de inteiro
 i,j:inteiro
 inicio
-escreval("Digite 20 numeros inteiros para Matriz A:")
-para i de 1 ate 4 passo 1 faca
-     para j de 1 ate 5 passo 1 faca
+      escreval("Digite 20 numeros inteiros para Matriz A:")
+      para i de 1 ate 4 passo 1 faca
+           para j de 1 ate 5 passo 1 faca
              leia(a[i,j])
-     fimpara
-fimpara
-escreval("Essa e a Matriz A que voce acabou de digitar:")
-para i de 1 ate 4 passo 1 faca
-     para j de 1 ate 5 passo 1 faca
+           fimpara
+      fimpara
+      
+      escreval("Essa e a Matriz A que voce acabou de digitar:")
+      para i de 1 ate 4 passo 1 faca
+           para j de 1 ate 5 passo 1 faca
             escreva(a[i,j]:7)
-     fimpara
+           fimpara
      escreval
-fimpara
+     fimpara
 // Seção de Comandos 
 fimalgoritmo
